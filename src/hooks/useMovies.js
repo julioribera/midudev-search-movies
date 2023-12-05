@@ -20,6 +20,10 @@ export const useMovies = (searchInput) => {
       .then((response) => response.json())
       .then((data) => {
         const movies = data.Search;
+        if (!movies) {
+          setSearchResults([]);
+          return;
+        }
         const mappedMovies = movies.map((movie) => {
           return {
             title: movie.Title,

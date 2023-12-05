@@ -4,7 +4,7 @@ import { MoviesList } from "./components/MovieList";
 import { useState } from "react";
 
 function App() {
-  const [searchInput, setSearchInput] = useState("star");
+  const [searchInput, setSearchInput] = useState("Star Wars");
 
   const handleInputChange = (event) => {
     setSearchInput(event.target.value);
@@ -15,7 +15,12 @@ function App() {
       <header>
         <h1>Buscador de películas</h1>
         <form>
-          <input type="text" value={searchInput} onChange={handleInputChange} />
+          <input
+            type="text"
+            value={searchInput}
+            placeholder="Escribe tu búsqueda..."
+            onChange={handleInputChange}
+          />
         </form>
       </header>
       <main>
