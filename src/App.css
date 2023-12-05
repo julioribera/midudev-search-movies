@@ -1,0 +1,26 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Align a form inside .App > header > form in the middle */
+/* It has an input and submit button, which has to be in the same line, with some space between them */
+.App > header > form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.App > header > form > input {
+  width: 100%;
+  max-width: 100%;
+}
+
+main {
+  width: 100%;
+  max-width: 1300px;
+  padding: 15px 5%;
+}
