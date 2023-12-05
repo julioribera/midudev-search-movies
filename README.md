@@ -19,7 +19,3 @@ Primera iteración:
 ✅ Haz que la búsqueda se haga automáticamente al escribir.
 
 ✅ Evita que se haga la búsqueda continuamente al escribir (debounce)
-
-## API:
-
-http://www.omdbapi.com/?i=tt3896198&apikey=6ca864e1
